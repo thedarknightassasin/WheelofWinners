@@ -1,0 +1,149 @@
+<html>
+    <head>
+     <meta charset="utf-8">
+     <link rel="icon" href="images/logo.ico">
+
+        <title>My Winning Wheel</title>
+
+        <meta name="viewport " content="width=device-width, initial-scale=1.0">
+
+        <script src='Winwheel.js'></script>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <nav class="navbar  navigation-bar bg-primary navbar-expand-lg navbar-light  shadow ">
+            <div class="container-fluid">
+              <a class="navbar-brand " href="index.html" navbar-items><span class="textColor">WheelofWinners</span> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+ 
+                  </li>
+
+
+                </ul>
+                <button type="button" class="btn bg-primary  shadow-sm donateBtn ">Donate</button>
+              </div>
+            </div>
+          </nav>
+
+<!-- canvas area -->
+
+<div class="flexbox-container">
+
+  <div class="form-floating  textAreaDiv flexbox-item1 flexbox-item">
+
+      <!-- button section -->
+      
+      <div class="buttons">
+        <table colspan>
+          <tr>
+              <td colspan="2">
+
+                <input type="text" name="textarea" class=" textArea textBox form-control shadow"  placeholder="Enter Name" id="floatingTextarea2" style="height: 100px">
+              </td>
+          </tr>
+          <tr>
+            <td>
+
+              <button type="button" id= "deleteBtn" class="btn shadow-sm deleteBtn" onClick="deleteSegment();">Delete</button>
+
+            </td>
+            <td>
+              <button type="button" class="btn shadow-sm resetBtn" onClick="resetWheel();">Reset</button>
+            </td>
+            <tr>
+              <td colspan="2" class="tdSpinToWin">
+                              <button type="button" class="btn  shadow-sm spinWinBtn" onClick="calculatePrize();">Spin to Win!</button>
+              </td>
+            </tr>
+
+          </tr>
+          <tr>
+
+          </tr>
+
+        </table>
+        
+
+      
+      <!-- <button onClick="addSegment();">Add Name</button> -->
+
+
+
+ 
+    </div>
+
+  </div>
+
+
+        <div id="canvasContainer flexbox-item2 flexbox-item">
+        <canvas class="shadow-lg canvasClass" id='canvas' width='750' height='750'
+            data-responsiveMinWidth="180"
+            data-responsiveScaleHeight="true"  
+            data-responsiveMargin="50"
+            onClick="startSpin();">
+        </canvas>
+        <img id="prizePointer" src="images/black-pointer.png" alt="pointer-img" />
+    </div>
+
+
+
+    <div class="flexbox-item1 flexbox-item">
+      <div class="">
+<a href="https://www.lazada.com.ph/"><img class="adImg" src="images/lazada.jpg" alt="ad"></a>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small class="text-muted">11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+        
+
+ 
+
+
+
+
+
+
+
+<div class="footer-container"><footer >© 2020 <em>Wheel of Winners </em> <br>   &nbsp;  &nbsp;  &nbsp;inteligente  </footer></div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
+</html>

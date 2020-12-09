@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* #canvasContainer {
+    top: 100px;
+
+    top: 100px;
+    left: 600px;
+}    */
+ 
+#canvas {
+    z-index: 1;
+}
+ 
+#prizePointer {
+    display: inline;
+    position: relative ;
+    right: 403px;
+    bottom: 761px;
+    z-index: 999;
+    height: 50px;
+    width: 50px;
+    transform: rotate(90deg);
+
+} 
+
+
+.navigation-bar {
+    padding-bottom: 1px;
+
+
+}
+
+
+.canvasClass{
+    border-radius: 50%;
+}
+
+.flexbox-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around ;
+
+}
+.flexbox-item{
+    padding: 60px;
+
+}
+
+
+.textAreaDiv {
+    width: 500px;
+}
+
+.text-container {
+    width: 300px;
+    border: 2px solid black;
+}
+
+.textColor {
+    color:#fbfbfb;
+    
+}
+
+.textColor:hover {
+    color:white;
+}
+
+
+
+td {
+
+    padding: 20px;
+}
+
+.resetBtn   {
+    padding-left:20px ;
+    padding-right:20px ;
+    background-color: #f1f1f1;
+
+}
+
+
+
+.resetBtn:hover   {
+
+    background-color:white ;
+}
+
+.deleteBtn {
+    background-color: #f1f1f1;
+}
+
+
+.deleteBtn:hover {
+    background-color: white;
+}
+
+.spinWinBtn  {
+    background-color:#f1f1f1;
+}
+
+.spinWinBtn:hover  {
+    background-color:white;
+}
+
+.donateBtn {
+color: #f1f1f1;
+}
+
+.donateBtn:hover {
+    color: white;
+    }
+    
+.buttons {
+    padding-top: 10px;
+}
+
+.footer-container {
+font-size: .8rem;
+margin-top: -70px;
+text-align: center;
+color:#bbbfca ;
+}
+
+
+
+.footer-container:hover {
+
+
+    color:#393e46 ;
+    }
+
+
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .adImg {
+        height: 650px;
+        width: 350px;
+    }
+
+
+ @media all and (max-width: 1366px){
+     
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+        #prizePointer {
+            position: relative ;
+            left: 350px;
+            bottom: 777px;
+            z-index: 999;
+            height: 50px;
+            width: 50px;
+            transform: rotate(90deg);
+        
+        } 
+
+
+       
+        .resetBtn   {
+            display: inline;
+            padding-left:20px ;
+            padding-right:20px ;
+            background-color: #f1f1f1;
+        
+        }
+        
+        
+
+
+
+
+
+        .deleteBtn  {
+            display: inline;
+            padding-left:15px ;
+            padding-right:15px ;
+            background-color:#f1f1f1 ;
+            
+        }
+
+
+        .text-container {
+            width: 300px;
+            border: 2px solid black;
+        }
+        
+
+
+
+.adImg {
+    display: none;
+}
+
+    }
